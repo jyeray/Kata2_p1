@@ -10,9 +10,9 @@ public class Main {
         
         String[] vector1={"Juan", "Ana","Lucia", "Pedro", "Pepe","Juan", "Ana","Lucia", "Pedro","Lucia", "Pedro","Pedro","Pedro","Pedro"};
         
-        Histogram histo = new Histogram(vector);
-        HashMap<Object, Integer> histogram = histo.getHistogram();
-        
+        //Histogram histo = new Histogram(vector);
+        Histogram<Object> histogram =CalculaHistogram.computeHisto(vector1);
+
         for (Object key:histogram.keySet()){
             System.out.println(key +" : "+histogram.get(key));
         }
