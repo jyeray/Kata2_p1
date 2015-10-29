@@ -10,7 +10,6 @@ public class Main {
         
         String[] vector1={"Juan", "Ana","Lucia", "Pedro", "Pepe","Juan", "Ana","Lucia", "Pedro","Lucia", "Pedro","Pedro","Pedro","Pedro"};
         
-        //Histogram histo = new Histogram(vector);
         Histogram<Object> histogram =CalculaHistogram.computeHisto(vector);
 
         for (Object key:histogram.keySet()){
